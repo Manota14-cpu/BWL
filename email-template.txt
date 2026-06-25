@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0;padding:0;background:#0a0a0a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#0a0a0a;padding:40px 16px;">
+    <tr>
+      <td align="center">
+        <table style="max-width:520px;width:100%;background:linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 24px 80px rgba(0,0,0,0.6);" cellspacing="0" cellpadding="0">
+          <!-- Header -->
+          <tr>
+            <td style="padding:32px 32px 20px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.06);">
+              <p style="margin:0;color:#ffffff;font-size:20px;font-weight:600;letter-spacing:-0.02em;">Nuevo mensaje</p>
+              <p style="margin:6px 0 0;color:rgba(255,255,255,0.35);font-size:12px;text-transform:uppercase;letter-spacing:0.06em;">Formulario de contacto — BWL</p>
+            </td>
+          </tr>
+          <!-- Body -->
+          <tr>
+            <td style="padding:24px 32px 16px;">
+              <table width="100%" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Nombre</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;font-weight:500;">{{from_name}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Email</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:rgba(120,180,255,0.9);font-weight:500;">{{from_email}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Empresa</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{company}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Sitio web</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:rgba(120,180,255,0.9);">{{website}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Tipo de proyecto</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{project_type}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Presupuesto</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{budget}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Tiempo estimado</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{timeline}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Cómo nos encontró</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{referral}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Archivos adjuntos</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{attachments}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Newsletter</span>
+                    <p style="margin:6px 0 0;font-size:15px;color:#ffffff;">{{newsletter}}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:14px 0;">
+                    <span style="font-size:10px;color:rgba(255,255,255,0.25);text-transform:uppercase;letter-spacing:0.08em;">Mensaje</span>
+                    <p style="margin:10px 0 0;font-size:14px;color:rgba(255,255,255,0.75);line-height:1.7;background:rgba(255,255,255,0.03);padding:16px 18px;border-left:2px solid rgba(255,255,255,0.15);border-radius:0 12px 12px 0;">{{message}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 32px 24px;text-align:center;border-top:1px solid rgba(255,255,255,0.06);">
+              <p style="margin:0;color:rgba(255,255,255,0.2);font-size:11px;letter-spacing:0.04em;">Generado automáticamente desde BWL</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

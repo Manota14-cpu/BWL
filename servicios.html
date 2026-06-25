@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios, Proyectos y Clientes | BWL</title>
+  <meta name="description" content="Conocé nuestros servicios de desarrollo web, apps móviles y diseño digital. Proyectos reales y clientes satisfechos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Servicios, Proyectos y Clientes | BWL">
+  <meta property="og:description" content="Desarrollo premium, apps móviles y diseño digital. Proyectos que hablan por sí solos.">
+  <meta property="og:image" content="https://bwl.dev/og-image.png">
+  <meta property="og:url" content="https://bwl.dev/servicios">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo-img">
+      <a href="index.html"><img src="bwl.png" alt="BWL" width="120" height="34"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#servicios-detalle">Servicios</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Hablemos</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="mobile-link">Inicio</a></li>
+      <li><a href="#servicios-detalle" class="mobile-link">Servicios</a></li>
+      <li><a href="index.html#contact" class="mobile-link">Contacto</a></li>
+    </ul>
+    <a href="index.html#contact" class="btn-primary mobile-cta">Hablemos →</a>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="home" style="min-height:70vh;">
+    <canvas id="heatmap-canvas"></canvas>
+    <div class="hero-grain"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        BWL · Servicios Premium
+      </p>
+      <h1 class="hero-heading" style="font-size:clamp(2.2rem,5vw,4rem);">
+        Todo lo que necesitás para <span style="color:var(--cyan);">crecer digitalmente</span>
+      </h1>
+      <p class="hero-sub">Desde el diseño hasta el desarrollo y despliegue. Un equipo chico, estándares grandes.</p>
+      <div class="hero-cta-group">
+        <a href="#servicios-detalle" class="btn-primary">Ver servicios</a>
+        <a href="index.html#contact" class="btn-ghost">Contactanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS DETALLE -->
+  <section class="services" id="servicios-detalle">
+    <div class="container">
+      <div class="section-label">// 001 — Servicios</div>
+      <h2 class="section-title">Soluciones completas</h2>
+      <div class="services-grid">
+
+        <div class="service-card" data-color="cyan" data-open="false">
+          <div class="service-num">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg>
+          </div>
+          <div class="service-header">
+            <h3>Frontend</h3>
+          </div>
+          <p>Interfaces modernas, rápidas y responsivas. React, Next.js, TypeScript y animaciones cuidadas.</p>
+          <div class="service-tag">React · Next.js · TypeScript · CSS</div>
+          <div class="service-expand">
+            <div class="service-expand-body">
+              <p class="service-expand-desc">Construimos interfaces que tus usuarios van a amar. Rápidas, accesibles y con atención a cada detalle visual.</p>
+              <ul class="service-features">
+                <li>React, Next.js, HTML/CSS</li>
+                <li>Animaciones y microinteracciones</li>
+                <li>Diseño responsive pixel-perfect</li>
+                <li>Integración Figma → código</li>
+                <li>Core Web Vitals optimizados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" data-color="magenta" data-open="false">
+          <div class="service-num">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <div class="service-header">
+            <h3>Backend</h3>
+          </div>
+          <p>APIs robustas, bases de datos y lógica de negocio. Node.js, Python, PostgreSQL y más.</p>
+          <div class="service-tag">Node.js · Python · APIs · Bases de datos</div>
+          <div class="service-expand">
+            <div class="service-expand-body">
+              <p class="service-expand-desc">La columna vertebral de tu producto. Sistemas escalables, seguros y documentados.</p>
+              <ul class="service-features">
+                <li>APIs REST y GraphQL</li>
+                <li>PostgreSQL, MongoDB, Redis</li>
+                <li>Autenticación y autorización</li>
+                <li>Arquitectura limpia y testeable</li>
+                <li>Documentación Swagger/OpenAPI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" data-color="green" data-open="false">
+          <div class="service-num">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <div class="service-header">
+            <h3>Apps Móviles</h3>
+          </div>
+          <p>Apps nativas para iOS y Android con una sola base de código. React Native y Flutter.</p>
+          <div class="service-tag">React Native · Flutter · iOS · Android</div>
+          <div class="service-expand">
+            <div class="service-expand-body">
+              <p class="service-expand-desc">Llevá tu producto a los dispositivos móviles de tus usuarios con apps rápidas y confiables.</p>
+              <ul class="service-features">
+                <li>React Native (JS) o Flutter (Dart)</li>
+                <li>GPS, pagos, notificaciones push</li>
+                <li>Sincronización offline</li>
+                <li>Publicación en App Store y Play Store</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card" data-color="yellow" data-open="false">
+          <div class="service-num">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <div class="service-header">
+            <h3>Diseño Digital</h3>
+          </div>
+          <p>Interfaces, branding y sistemas de diseño. De Figma al código sin perder calidad.</p>
+          <div class="service-tag">Figma · Branding · UI/UX · Design Systems</div>
+          <div class="service-expand">
+            <div class="service-expand-body">
+              <p class="service-expand-desc">Diseñamos la identidad visual y la experiencia de usuario de tu producto digital.</p>
+              <ul class="service-features">
+                <li>Diseño de interfaces en Figma</li>
+                <li>Identidad visual y logo</li>
+                <li>Sistemas de diseño (Design Systems)</li>
+                <li>Prototipado interactivo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS DETALLE -->
+  <section class="projects" id="proyectos-detalle">
+    <div class="container">
+      <div class="section-label">// 002 — Proyectos</div>
+      <h2 class="section-title">Trabajo reciente</h2>
+      <p style="color:var(--gray-text);margin-bottom:2.5rem;font-size:0.95rem;max-width:560px;">Cada proyecto es único. Estos son algunos de los que más orgullo nos dan.</p>
+      <div class="projects-grid">
+
+        <div class="project-card large" data-color="cyan">
+          <div class="project-bg-num">01</div>
+          <div class="project-info">
+            <span class="project-tag">Frontend · UX</span>
+            <h3>Proyecto Alpha</h3>
+            <p>Dashboard financiero en tiempo real para una fintech. Interfaz completa desde Figma hasta deploy.</p>
+            <span class="project-cta">Ver caso <span>→</span></span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card" data-color="magenta">
+          <div class="project-bg-num">02</div>
+          <div class="project-info">
+            <span class="project-tag">Backend · API</span>
+            <h3>Proyecto Beta</h3>
+            <p>API para e-commerce con catálogo, carrito y pagos. Stack Node.js + PostgreSQL.</p>
+            <span class="project-cta">Ver caso <span>→</span></span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card" data-color="green">
+          <div class="project-bg-num">03</div>
+          <div class="project-info">
+            <span class="project-tag">App · Mobile</span>
+            <h3>Proyecto Gamma</h3>
+            <p>App iOS/Android con mapa en tiempo real y sistema de reservas. React Native + Mapbox.</p>
+            <span class="project-cta">Ver caso <span>→</span></span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card" data-color="yellow">
+          <div class="project-bg-num">04</div>
+          <div class="project-info">
+            <span class="project-tag">Diseño · Branding</span>
+            <h3>Proyecto Delta</h3>
+            <p>Identidad visual y UI para una startup de salud. Logo, paleta y componentes en Figma.</p>
+            <span class="project-cta">Ver caso <span>→</span></span>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES / TESTIMONIALS -->
+  <section class="testimonials" id="clientes-detalle">
+    <div class="container">
+      <div class="section-label">// 003 — Clientes</div>
+      <h2 class="section-title">Lo que dicen de nosotros</h2>
+    </div>
+    <div class="testimonials-slider-wrap">
+      <div class="testimonials-track" id="testimonialsTrack">
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">BWL transformó nuestra plataforma en tiempo récord. La comunicación fue directa y el resultado superó todas las expectativas.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" data-initials="MG"></div>
+            <div>
+              <strong>Martín García</strong>
+              <span>CEO · FinFlow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Nunca había trabajado con un equipo tan ágil. Entregaron la API en 3 semanas y quedó perfecta, sin bugs en producción.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" data-initials="SR"></div>
+            <div>
+              <strong>Sofía Ríos</strong>
+              <span>CTO · ShopNow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">El diseño de nuestra app quedó exactamente como lo habíamos imaginado. Mucho criterio y foco en los detalles que importan.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" data-initials="JP"></div>
+            <div>
+              <strong>Juan Pablo Torres</strong>
+              <span>Founder · Mappit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Trabajo con ellos desde hace 2 años. Cada proyecto es mejor que el anterior. Se nota que les importa lo que hacen.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" data-initials="LA"></div>
+            <div>
+              <strong>Laura Acosta</strong>
+              <span>Directora · Salud+</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="testimonials-controls">
+        <button class="testimonial-btn" id="testimPrev" aria-label="Anterior">←</button>
+        <div class="testimonials-dots" id="testimonialsDots"></div>
+        <button class="testimonial-btn" id="testimNext" aria-label="Siguiente">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact" id="contact" style="border-top:1px solid var(--gray-border);">
+    <div class="container" style="text-align:center;padding:4rem 2rem;">
+      <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;margin-bottom:1rem;">¿Listo para arrancar?</h2>
+      <p style="color:var(--gray-text);margin-bottom:2rem;">Contanos tu idea y te mandamos un presupuesto claro en 24hs.</p>
+      <a href="index.html#contact" class="btn-primary">Hablemos →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="nav-logo-img footer-logo-img"><img loading="lazy" src="bwl.png" alt="BWL"></span>
+          <p class="footer-tagline">Código con cuidado. Diseño con propósito.</p>
+        </div>
+        <div class="footer-nav-col">
+          <p class="footer-col-title">Navegación</p>
+          <a href="index.html">Inicio</a>
+          <a href="#servicios-detalle">Servicios</a>
+          <a href="#proyectos-detalle">Proyectos</a>
+          <a href="#clientes-detalle">Clientes</a>
+        </div>
+        <div class="footer-nav-col">
+          <p class="footer-col-title">Servicios</p>
+          <a href="#servicios-detalle">Frontend</a>
+          <a href="#servicios-detalle">Backend</a>
+          <a href="#servicios-detalle">Apps Móviles</a>
+          <a href="#servicios-detalle">Diseño Digital</a>
+        </div>
+        <div class="footer-nav-col">
+          <p class="footer-col-title">Social</p>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 BWL. Todos los derechos reservados.</span>
+        <span class="footer-made">Hecho con cuidado.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">↑</button>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <script src="main.js" defer></script>
+
+</body>
+</html>
